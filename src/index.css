@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+html {
+  background-color: #0b2434;
+  font-family: "Karla", "Inter", "sanserif";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  place-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+
+section > div {
+  background-color: #f5f5f5;
+  padding: 33px 61px;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 68px;
+  text-align: center;
+  margin: 0;
+  color: #2b283a;
+}
+p {
+  font-family: "Inter", "Karla", "sanserif";
+  text-align: center;
+  max-width: 85%;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #4a4e74;
+}
+.dice {
+  width: 60px;
+  border-radius: 4px;
+  height: 60px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 15%);
+  border: none;
+  font-size: 24px;
+  background-color: white;
+}
+
+.roll-btn {
+  color: white;
+  padding: 10px 36px;
+  background-color: #5035ff;
+  outline: none;
+  border: none;
+  font-size: 36px;
+  border-radius: 4px;
+  box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px
+    rgba(0, 0, 0, 18%);
+}
+
+.btn-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-div {
+  overflow: hidden;
+  position: relative;
+}
