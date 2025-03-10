@@ -3,14 +3,14 @@ import Dice from "./components/Dice";
 import Confetti from "react-confetti";
 import { nanoid } from "nanoid";
 export default function App() {
-  //Create a dice component
-  //We want 10 dices in all and is stored in an array
-
   const [dice, setDice] = useState(() => createDice());
 
   const isGameWon =
     dice.every((die) => die.isHeld) &&
     dice.every((die) => die.value === dice[0].value);
+
+  //useEffect for timer
+  //
 
   function createDice() {
     return new Array(10).fill({}).map(() => ({
